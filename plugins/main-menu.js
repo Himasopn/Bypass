@@ -566,26 +566,7 @@ ${readMore}
 │ *16.* AI Menu
 │ *17.* Religion Menu
 │ *18.* Plugin Menu
-╰───────⳹
- `${readMore}` 
-;
-
-  
-  const { result, key, timeout } = await conn.sendMessage(m.chat, { video: { url: menuvid }, caption: infoText.trim(),  gifPlayback: true,
-  gifAttribution: 0}, { quoted: fcontact })
-  
-   // Save the menu options to gurumenu
-  conn.gurumenu[m.sender] = {
-    result,
-    key,
-    timeout: setTimeout(() => {
-      conn.sendMessage(m.chat, {
-          delete: key
-      });
-      delete conn.gurumenu[m.sender];
-  }, 1000 * 1000),
-  };
-  };
+╰───────⳹ ,
   
 handler.before = async (m, { conn }) => {
   conn.gurumenu = conn.gurumenu ? conn.gurumenu : {}
