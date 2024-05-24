@@ -73,11 +73,11 @@ global.APIKeys = {
 // Sticker WM
 global.botname = process.env.BOTNAME
 global.premium = 'true'
-global.packname = 'GURU┃ᴮᴼᵀ'
-global.author = 'ᴳᵘʳᵘ ˢᵉⁿˢᵉⁱ'
+global.packname = process.env.SNAME
+global.author = process.env.ANAME
 global.menuvid = 'https://telegra.ph/file/ddac28bae1f9a325d698c.jpg'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/woxsov\n'
-global.dygp = ''
+global.dygp = 'https://wa.me/917002015750?text=HEY.....%F0%9F%8D%B7%E2%9C%A8%EF%B8%8F'
 global.fgsc = 'https://github.com/Himasopn'
 global.fgyt = 'https://www.instagram.com/woxsov'
 global.fgpyp = 'https://www.instagram.com/woxsov'
