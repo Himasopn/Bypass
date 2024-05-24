@@ -536,7 +536,7 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
 ⛥ *Uptime:* ${muptime}
 ⛥ *Database:*  ${totalreg}
 ╰──────────⳹
-> © Guru Sensei\n\n
+> © ⚛️\n\n
 ${readMore}
 乂───『 *I N F O  C M D*』───乂 
 │ *${totalfeatures}* Commands
@@ -581,8 +581,8 @@ ${readMore}
       },
       forwardingScore: 999,
       externalAdReply: {
-        title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
-        body: 'ᴍᴇɴᴜ',
+        title: '𝐋𝐄𝐗𝐂𝐏𝐈𝐎🍷',
+        body: '⚛️',
         thumbnailUrl: 'https://i.pinimg.com/736x/67/4b/41/674b416d858ce262be0c53253b3f1dcc.jpg',
         sourceUrl: 'https://guruapi.tech',
         mediaType: 1,
