@@ -566,7 +566,7 @@ ${readMore}
 │ *16.* AI Menu
 │ *17.* Religion Menu
 │ *18.* Plugin Menu
-╰───────⳹ ,
+╰───────⳹`
   
 handler.before = async (m, { conn }) => {
   conn.gurumenu = conn.gurumenu ? conn.gurumenu : {}
