@@ -574,17 +574,13 @@ ${readMore}
     contextInfo: {
       mentionedJid: [m.sender],
       isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363178281296360@newsletter',
-        newsletterName: 'Click Here or u Gay',
-        serverMessageId: -1,
       },
       forwardingScore: 999,
       externalAdReply: {
-        title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
-        body: 'ᴍᴇɴᴜ',
-        thumbnailUrl: 'https://i.pinimg.com/736x/67/4b/41/674b416d858ce262be0c53253b3f1dcc.jpg',
-        sourceUrl: 'https://guruapi.tech',
+        title: '✨️🕊',
+        body: '⚛️',
+        thumbnailUrl: 'https://telegra.ph/file/ddac28bae1f9a325d698c.jpg',
+        sourceUrl: 'https://wa.me/917002015750?text=HEY.....%F0%9F%8D%B7%E2%9C%A8%EF%B8%8F',
         mediaType: 1,
         renderLargerThumbnail: false,
       },
