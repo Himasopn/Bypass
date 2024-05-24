@@ -566,7 +566,46 @@ ${readMore}
 │ *16.* AI Menu
 │ *17.* Religion Menu
 │ *18.* Plugin Menu
-╰───────⳹`
+╰───────⳹
+`
+   const { result, key, timeout } = await conn.sendMessage(
+    m.chat,
+    { video: { url: menuvid }, caption: infoText.trim(),
+    contextInfo: {
+      mentionedJid: [m.sender],
+      isForwarded: false,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363178281296360@newsletter',
+        newsletterName: '✰ BY AS',
+        serverMessageId: -1,
+      },
+      forwardingScore: 999,
+      externalAdReply: {
+        title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+        body: 'ᴍᴇɴᴜ',
+        thumbnailUrl: 'https://i.pinimg.com/736x/67/4b/41/674b416d858ce262be0c53253b3f1dcc.jpg',
+        sourceUrl: 'https://guruapi.tech',
+        mediaType: 1,
+        renderLargerThumbnail: false,
+      },
+    },
+    
+    gifPlayback: true, gifAttribution: 0 },
+    { quoted: fcontact }
+  )
+
+  // Save the menu options to gurumenu
+  conn.gurumenu[m.sender] = {
+    result,
+    key,
+    timeout: setTimeout(() => {
+      conn.sendMessage(m.chat, {
+        delete: key,
+      })
+      delete conn.gurumenu[m.sender]
+    }, 150 * 1000),
+  }
+}
   
 handler.before = async (m, { conn }) => {
   conn.gurumenu = conn.gurumenu ? conn.gurumenu : {}
