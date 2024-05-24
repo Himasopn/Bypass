@@ -574,6 +574,7 @@ ${readMore}
     contextInfo: {
       mentionedJid: [m.sender],
       isForwarded: true,
+       
       },
       forwardingScore: 999,
       externalAdReply: {
