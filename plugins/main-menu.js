@@ -567,43 +567,26 @@ ${readMore}
 │ *17.* Religion Menu
 │ *18.* Plugin Menu
 ╰───────⳹
- `
-  const { result, key, timeout } = await conn.sendMessage(
-    m.chat,
-    { video: { url: menuvid }, caption: infoText.trim(),
-    contextInfo: {
-      mentionedJid: [m.sender],
-      isForwarded: true,
-       
-      },
-      forwardingScore: 999,
-      externalAdReply: {
-        title: '✨️🕊',
-        body: '⚛️',
-        thumbnailUrl: 'https://telegra.ph/file/ddac28bae1f9a325d698c.jpg',
-        sourceUrl: 'https://wa.me/917002015750?text=HEY.....%F0%9F%8D%B7%E2%9C%A8%EF%B8%8F',
-        mediaType: 1,
-        renderLargerThumbnail: false,
-      },
-    },
-    
-    gifPlayback: true, gifAttribution: 0 },
-    { quoted: fcontact }
-  )
+ `${readMore}` 
+;
 
-  // Save the menu options to gurumenu
+  
+  const { result, key, timeout } = await conn.sendMessage(m.chat, { video: { url: menuvid }, caption: infoText.trim(),  gifPlayback: true,
+  gifAttribution: 0}, { quoted: fcontact })
+  
+   // Save the menu options to gurumenu
   conn.gurumenu[m.sender] = {
     result,
     key,
     timeout: setTimeout(() => {
       conn.sendMessage(m.chat, {
-        delete: key,
-      })
-      delete conn.gurumenu[m.sender]
-    }, 150 * 1000),
-  }
-}
-
+          delete: key
+      });
+      delete conn.gurumenu[m.sender];
+  }, 1000 * 1000),
+  };
+  };
+  
 handler.before = async (m, { conn }) => {
   conn.gurumenu = conn.gurumenu ? conn.gurumenu : {}
   if (m.isBaileys || !(m.sender in conn.gurumenu)) return
@@ -617,8 +600,7 @@ handler.before = async (m, { conn }) => {
       { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' }, caption: botmenu },
       { quoted: fcontact }
     )
-  } else if (choice === '2') {
-    await conn.sendMessage(
+age(
       m.chat,
       { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' }, caption: ownermenu },
       { quoted: fcontact }
