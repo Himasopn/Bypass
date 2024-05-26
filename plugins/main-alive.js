@@ -30,12 +30,12 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: 'I AM ALIVE',
-        body: 'GURU BOT',
+        title: 'Я жив!✨️🙂',
+        body: '⚛️',
         thumbnailUrl: img,
-        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+        sourceUrl: 'https://wa.me/917002015750?text=HEY.....%F0%9F%8D%B7%E2%9C%A8%EF%B8%8F',
         mediaType: 1,
-        renderLargerThumbnail: true,
+        renderLargerThumbnail: false,
       },
     },
   }
