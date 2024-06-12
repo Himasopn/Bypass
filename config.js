@@ -84,7 +84,7 @@ global.thumb = fs.readFileSync('./Assets/Gurulogo.jpg')
 
 global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
-global.dmoji = '🤭'
+global.dmoji = '💚'
 global.done = '✅'
 global.error = '❌'
 global.xmoji = '🔥'
