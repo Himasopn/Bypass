@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://wa.me/917002015750?text=HEY.....%F0%9F%8D%B7%E2%9C%A8%EF%B8%8F">
-    <img alt="GURU-BOT KA chinni chor script" height="400" src="https://telegra.ph/file/6cc4f0763074e14bd8c16.jpg">
+    <img alt="GURU-BOT KA chinni chor script" height="400" src="https://telegra.ph/file/efab9ec02bfb3d188e247.jpg">
   </a>
 </p>
 
